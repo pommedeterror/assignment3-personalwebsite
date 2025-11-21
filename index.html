@@ -16,9 +16,9 @@ Body text = Space Grotesk
         font-size: 16px;
         font-family: "Space Grotesk", sans-serif;
       }
-      
+
       body {
-        width: 1200px;
+        width: 0 auto;
         background: #ECF1F7;
       }
 
@@ -30,53 +30,76 @@ Body text = Space Grotesk
 
       p {
         text-align: center;
-/*         font-family: "Space Grotesk", sans-serif; */
       }
-      
-      .section {
-        height: 740px;
+
+      a {
+        color: black;
         align-self: center;
       }
       
-/*       .hero {
-        height: 440px;
-      } */
+      a:hover {
+        letter-spacing: 0.03em;
+      }
       
+      .nav {
+        text-decoration: none;  
+      }
+      
+      .section {
+        width: 1200px;
+        height: 740px;
+        align-self: center;
+      }
+
+      .hero {
+        width: 1200px;
+        height: 540px;
+      }
+
       .container {
         padding-top: 100px;
         display: grid;
-        grid-template-columns: 151px 151px auto;
+        grid-template-columns: auto auto auto;
         justify-content: center;
       }
       
-      .grid-item {
-        
+      .container div {
+        padding: 0 30px 0 30px;
       }
-      
+
       #footer {
+        text-align: center;
         display: flex;
+        justify-content: center;
         width: 1200px;
         height: 186px;
         padding: 77px 0 69px 0;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
         background-color: black;
       }
     </style>
   </head>
   <body>
-    <div class="section">
+    <div class="hero">
       <h1>My Story Studio</h1>
       <div class="container">
-        <div>Namesake</div>
-        <div>Heraverse</div>
-        <div>Spider-Monkey</div>
+        <div>
+          <a href="page1.html" class="nav">Namesake</a>
+        </div>
+        <div>
+          <a href="page2.html" class="nav">Heraverse</a>
+        </div>
+        <div>
+          <a href="page3.html" class="nav">Spider-Monkey</a>
+        </div>
       </div>
     </div>
-    
+
     <div class="section">
-    <h1>Namesake</h1>
+      <h1>Namesake</h1>
+      <p>
+        An immortal child wanders the four kingdoms of Midiron, reclaiming pieces of her soul.
+      </p>
+      <a href="page1.html">See the full pitch</a>
     </div>
     <div id="footer">
     </div>
