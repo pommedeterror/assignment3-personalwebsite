@@ -81,25 +81,6 @@ Body text = Space Grotesk
         transition: 0.15s;
       }     
       
-      .section {
-        width: 1200px;
-        height: 740px;
-      }
-      
-      .section2 {
-        width: 1200px;
-        height: 740px;
-        background-image: url("frame2.png");
-        background-repeat: no-repeat;
-        background-size: 60%;
-        background-position-y: 190px;
-        background-position-x: 100px;
-      }
-      
-      .section3 {
-        width: 1200px;
-        height: 740px;
-      }
       .frame-text {
         padding-bottom: 100px;
         width: auto;
@@ -109,10 +90,20 @@ Body text = Space Grotesk
         background-position: center;
       }
       
-      .section3 .frame-text {
-        background-size: 65%;
+       .left h1 {
+        text-align: left;
+        margin-bottom: -50px; 
       }
       
+      .left p {
+        text-align: left;
+      }     
+      
+      .section {
+        width: 1200px;
+        height: 640px;
+      }
+    
       .section img {
         padding-left: 120px;
         padding-top: 50px;
@@ -121,7 +112,17 @@ Body text = Space Grotesk
       .section p, .section3 p {
         margin: auto;
       }
-      
+            
+      .section2 {
+        width: 1200px;
+        height: 740px;
+        background-image: url("frame2.png");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position-y: 190px;
+        background-position-x: 100px;
+      }
+
       .section2 .left{
         width: auto;
         height: 400px;
@@ -131,15 +132,21 @@ Body text = Space Grotesk
       .section2 img {
         padding-left: 100px;
         padding-top: 30px;
+      }      
+      
+      .section3 {
+        width: 1200px;
+        height: 540px;
       }
       
-      .left h1 {
-        text-align: left;
-        margin-bottom: -50px; 
+      .section3 .frame-text {
+        background-size: 65%;
       }
       
-      .left p {
-        text-align: left;
+      #marissa {
+        float: right;
+        padding-right: 20px;
+        padding-top: 66px;
       }
       
       #hero-frame {
@@ -147,6 +154,11 @@ Body text = Space Grotesk
         width: 900px;
         left: 270px;
         top: 40px;
+      }
+      
+      #top {
+        margin-top: -70px;
+        padding-bottom: 70px;
       }
       
       #hero {
@@ -172,13 +184,19 @@ Body text = Space Grotesk
         background-color: black;
       }
       
-      #top {
+      #top-nav {
         color: white;
         text-decoration: none;
+      }
+      
+      #spidermonkey-sprites {
+        margin-top: -300px; 
+        padding: 0 100px 0 100px;
       }
     </style>
   </head>
   <body>
+    <div id="top"></div>
     <div id="hero">
       <h1>My Story Studio</h1>
       <div class="container">
@@ -236,10 +254,14 @@ Body text = Space Grotesk
     <div class="frame-text">
       <h1>Spider-Monkey</h1>
       <p>Peter Ke is a Chinese-American teen, living in bustling Shanghattan. His life is changed forever when he's bitten by a radioactive spider... monkey? <br> <br> <a href="page3.html">See the full pitch</a></p>
-    </div>    
+    </div>
+      <div id="spidermonkey-sprites">
+      <img src="peter.png" alt="description of image" width="25%">
+      <img id="marissa" src="marissa.png" alt="description of image" width="20%">
+      </div>
       </div>
     <div id="footer">
-      <p><a id="top" href="#hero">^ <br> Back to top</a></p>
+      <p><a id="top-nav" href="#top">^ <br> Back to top</a></p>
     </div>
   </body>
 </html>
