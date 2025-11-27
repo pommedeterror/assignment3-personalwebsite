@@ -1,1 +1,248 @@
 <!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 3: Personal Website</title>
+    <!--All fonts
+Headers = Koulen
+Body text = Space Grotesk
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+      html {
+        width: 1440px;
+        font-size: 16px;
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      body {
+        margin: 0 auto;
+        background: #ECF1F7;
+        width: 1200px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 7em;
+        font-family: "Koulen", "Helvetica";
+        margin: 60px 0 -30px 0;
+        padding-top: 60px;
+      }
+
+      p {
+        max-width: 350px;
+        text-align: center;
+      }
+
+      a {
+        color: black;
+        transition: 0.2s;
+      }
+
+      a:hover {
+        letter-spacing: 0.03em;
+      }
+
+      .folder:hover {
+        width: 61.2%;
+      }
+
+      .nav {
+        padding: 0 35px 0 25px;
+        text-decoration: none;
+      }
+
+      .buffer {
+        height: 100px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+      }
+
+      .container div {
+        padding: 8px 0 8px 0;
+        align-content: center;
+      }
+
+      .container img {
+        padding-left: 24px;
+      }
+
+      img.folder {
+        align-self: center;
+        width: 60%;
+        height: auto;
+        transition: 0.15s;
+      }
+
+      .frame-text {
+        padding-bottom: 100px;
+        width: auto;
+        background-image: url("frame2.png");
+        background-repeat: no-repeat;
+        background-size: 48%;
+        background-position: center;
+      }
+
+      .left h1 {
+        text-align: left;
+        margin-bottom: -50px;
+      }
+
+      .left p {
+        text-align: left;
+      }
+
+      .section {
+        width: 1200px;
+        height: 640px;
+      }
+
+      .section img {
+        padding-left: 120px;
+        padding-top: 50px;
+      }
+
+      .section p,
+      .section3 p {
+        margin: auto;
+      }
+
+      .section2 {
+        width: 1200px;
+        height: 740px;
+        background-image: url("frame2.png");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position-y: 190px;
+        background-position-x: 100px;
+      }
+
+      .section2 .left {
+        width: auto;
+        height: 400px;
+        display: inline-block;
+      }
+
+      .section2 img {
+        padding-left: 100px;
+        padding-top: 30px;
+      }
+
+      .section3 {
+        width: 1200px;
+        height: 540px;
+      }
+
+      .section3 .frame-text {
+        background-size: 65%;
+      }
+
+      #marissa {
+        float: right;
+        padding-right: 20px;
+        padding-top: 66px;
+      }
+
+      #hero-frame {
+        position: absolute;
+        width: 900px;
+        left: 270px;
+        top: 40px;
+      }
+
+      #top {
+        margin-top: -70px;
+        padding-bottom: 70px;
+      }
+
+      #hero {
+        width: 1200px;
+        height: 550px;
+        background-image: url("frame1.png");
+        background-size: 72%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      #hero h1 {
+        margin-bottom: 10px;
+      }
+
+      #footer {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 1200px;
+        height: 80px;
+        margin-top: 60px;
+        padding: 77px 0 69px 0;
+        background-color: black;
+      }
+
+      #top-nav {
+        color: white;
+        text-decoration: none;
+      }
+
+      #spidermonkey-sprites {
+        margin-top: -300px;
+        padding: 0 100px 0 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top"></div>
+    <div id="hero">
+      <h1>Spider-Monkey</h1>
+      <div class="container">
+        <div>
+          <a href="page1.html">
+            <img class="folder" src="folder.png" alt="A pixel art of a computer folder.">
+          </a>
+        </div>
+        <div>
+          <a href="page2.html">
+            <img class="folder" src="folder.png" alt="A pixel art of a computer folder.">
+          </a>
+        </div>
+        <div>
+          <a href="page3.html">
+            <img class="folder" src="folder.png" alt="A pixel art of a computer folder.">
+          </a>
+        </div>
+      </div>
+      <div class="container">  
+        <div>
+        <a href="index.html" class="nav">&#x200b &#x200b Home &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b </a>
+        </div>
+        <div>
+          <a href="page2.html" class="nav">Heraverse</a>
+        </div>
+        <div>
+          <a href="page1.html" class="nav"> &#x200b &#x200b &#x200b &#x200b  &#x200b &#x200b &#x200b&#x200b &#x200b Namesake</a>
+        </div>
+        </div>      
+      </div>
+<!-- Content starts here-->
+    <div class="section">
+    <h1>Plot</h1>
+    </div>
+    <div class="section">
+    <h1>Characters</h1>
+    </div>
+    <div class="section">
+    <h1>Gallery</h1>
+    </div>
+<!--     This is the end of the page     -->
+    <div id="footer">
+      <p><a id="top-nav" href="#top">^ <br> Back to top</a></p>
+    </div>
+  </body>
+</html>
