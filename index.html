@@ -28,7 +28,7 @@ Body text = Space Grotesk
         text-align: center;
         font-size: 7em;
         font-family: "Koulen", "Helvetica";
-        margin: 60px 0 0 0;
+        margin: 60px 0 -30px 0;
         padding-top: 60px;
       }
 
@@ -39,25 +39,20 @@ Body text = Space Grotesk
 
       a {
         color: black;
+        transition: 0.2s;
       }
 
       a:hover {
         letter-spacing: 0.03em;
       }
-
+      
+      .folder:hover {
+        width: 61.2%;
+      }
+      
       .nav {
         padding: 0 35px 0 25px;
         text-decoration: none;
-      }
-
-      .section {
-        width: 1200px;
-        height: 740px;
-      }
-      
-      .section2 {
-        width: 1200px;
-        height: 740px;
       }
       
       .buffer {
@@ -83,22 +78,59 @@ Body text = Space Grotesk
         align-self: center;
         width: 60%;
         height: auto;
+        transition: 0.15s;
       }     
+      
+      .section {
+        width: 1200px;
+        height: 740px;
+      }
+      
+      .section2 {
+        width: 1200px;
+        height: 740px;
+        background-image: url("frame2.png");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position-y: 190px;
+        background-position-x: 100px;
+      }
+      
+      .section3 {
+        width: 1200px;
+        height: 740px;
+      }
+      .frame-text {
+        padding-bottom: 100px;
+        width: auto;
+        background-image: url("frame2.png");
+        background-repeat: no-repeat;
+        background-size: 48%;
+        background-position: center;
+      }
+      
+      .section3 .frame-text {
+        background-size: 65%;
+      }
       
       .section img {
         padding-left: 120px;
         padding-top: 50px;
       }
       
-      .section p {
+      .section p, .section3 p {
         margin: auto;
       }
       
       .section2 .left{
-/*         background-color: red; */
-        margin-left: 120px;
-        width: 700px;
+        width: auto;
         height: 400px;
+        display: inline-block;
+      }
+      
+      .section2 img {
+        padding-left: 100px;
+        padding-top: 30px;
       }
       
       .left h1 {
@@ -109,10 +141,25 @@ Body text = Space Grotesk
       .left p {
         text-align: left;
       }
-
+      
+      #hero-frame {
+        position: absolute;
+        width: 900px;
+        left: 270px;
+        top: 40px;
+      }
+      
       #hero {
         width: 1200px;
-        height: 340px;
+        height: 550px;
+        background-image: url("frame1.png");
+        background-size: 72%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      
+      #hero h1 {
+        margin-bottom: 10px;
       }
 
       #footer {
@@ -161,27 +208,36 @@ Body text = Space Grotesk
         <div id="spidermonkey">
           <a href="page3.html" class="nav"> &#x200b &#x200b &#x200b Spider-Monkey</a>
         </div>
-        </div>
+        </div>      
       </div>
     <div class="section">
-      <div class="buffer"></div>
+      <div class="frame-text">
       <h1>Namesake</h1>
       <p>
         An immortal child wanders the four kingdoms of Midiron, reclaiming pieces of her soul.
       <br> <br> <a href="page1.html">See the full pitch</a></p>
+        </div>
       <img src="namesakelineup.png" alt="description of image">
     </div>
     <div class="section2">
       <div class="buffer"></div>
-      <div class="left">
-      <h1>Heraverse</h1>
+      <div class="container">
+        <div class="left">
+          <h1>Heraverse</h1>
       <p>Heraverse is an urban fantasy political drama that takes place in Japan. Lots of corruption, death, and tragedy. <br> <br>
 <a href="page2.html">See the full pitch</a></p>
-    </div>
+          </div>
+        <div class="container">
+          <img src="heraversesprites.png" alt="description of image" width="350px">
       </div>
-    <div class="section">
-    <h1>Spider-Monkey</h1>
+        </div>
+      </div>
+    <div class="section3">
+    <div class="frame-text">
+      <h1>Spider-Monkey</h1>
+      <p>Peter Ke is a Chinese-American teen, living in bustling Shanghattan. His life is changed forever when he's bitten by a radioactive spider... monkey? <br> <br> <a href="page3.html">See the full pitch</a></p>
     </div>    
+      </div>
     <div id="footer">
       <p><a id="top" href="#hero">^ <br> Back to top</a></p>
     </div>
