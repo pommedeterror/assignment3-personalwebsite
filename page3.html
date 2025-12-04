@@ -16,6 +16,7 @@ Body text = Space Grotesk
         width: 1440px;
         font-size: 16px;
         font-family: "Space Grotesk", sans-serif;
+        scroll-behavior: smooth;
       }
 
       body {
@@ -48,6 +49,25 @@ Body text = Space Grotesk
 
       img {
         width: 50%;
+        transition: 0.2s;
+      }
+     
+      img:hover {
+        animation: movement 2s ease-in-out infinite;
+      }
+      
+      @keyframes movement {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        
+        50% {
+          transform: translate(5px, 2px);
+        }
+        
+        100% {
+          transform: translate(0px, 0px);
+        }
       }
 
       .folder:hover {
@@ -64,20 +84,17 @@ Body text = Space Grotesk
       }
       
       .container {
-/*         background-color: red; */
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
-        padding-left: 250px;
+        margin-left: 280px;
       }
 
       .container div {
-/*         border: 1px solid black; */
         align-content: center;
       }
       
       .container img {
-/*         border: 1px solid black; */
         margin-left: -140px;
       }
 
@@ -127,6 +144,11 @@ Body text = Space Grotesk
         transition: 0.3s;
         padding-top: 50px;
       }
+     
+     .section-plot p {
+       padding-top: 20px;
+       max-width: 480px;
+     }
 
       .section p,
       .section-plot p {
@@ -147,6 +169,22 @@ Body text = Space Grotesk
       .container-nav img {
         padding-left: 24px;
       }
+     
+     .coming-soon {
+        width: 1200px;
+        height: 330px;
+        text-align: center;
+       align-content: center;
+       background-image: url("frame2.png");
+       background-size: 45%;
+       background-repeat: no-repeat;
+       background-position: center;
+       transition: 0.2s;
+     }
+     
+     .coming-soon:hover {
+       background-size: 46%;
+     }
       
       #hero-frame {
         position: absolute;
@@ -188,7 +226,7 @@ Body text = Space Grotesk
         color: white;
         text-decoration: none;
       }
-
+     
     </style>
   </head>
   <body>
@@ -227,7 +265,7 @@ Body text = Space Grotesk
 <!-- Content starts here-->
     <div class="section-plot">
     <h1>Plot</h1>
-      <p>A Chinese-American spin on the classic Spider-man formula. This Peter— Peter Ke– is an aspiring CS student that got bit by a radioactive spider monkey, and got the regular Spiderman powers along with extra hair and a tail. He lives in Shanghattan, the busiest, most tech-advanced city in the world. The beginning of SpiderMonkey, as a vigilante, happens almost by accident, as he attempts to save his school festival from a rogue government mecha.</p>
+      <p>A Chinese-American spin on the classic Spider-man formula. This Peter— Peter Ke– is an aspiring CS student that got bit by a radioactive spider monkey, and got the regular Spiderman powers along with extra hair and a tail. <br><br>He lives in Shanghattan, the busiest, most tech-advanced city in the world. The beginning of SpiderMonkey, as a vigilante, happens almost by accident, as he attempts to save his school festival from a rogue government mecha.</p>
 <img src="plot-spidermonkey.png" alt="The words 'SPIDERMONKEY' lays overtop an image of Shanghai. The Chinese translation of SPIDERMONKEY reads: 蜘蛛猴.">
       
     </div>
@@ -266,16 +304,24 @@ Body text = Space Grotesk
         <p>This Earth's Uncle Ben goes by the name Uncle Benny (or Benny Shushu). He is a father figure to Peter, as Peter's actual father fails to provide the proper emotional bond an adolescent boy needs. He has lost touch with him in recent years, though.</p>
               </div>
         <div>
-              <img src="benny.png" alt="description of image">
+              <img src="benny.png" alt="Uncle Benny fans himself while holding a Monster Energy drink can with a bright smile on his face. He is a balding elderly man, wearing red shorts and a sweat stained tanktop.">
               </div>
         
       </div>
+      <div class="buffer"></div>
+      <div class="coming-soon">
       <h2>More characters coming soon!</h2>
+      </div>
       
     </div>
-    <div class="section">
+    <div>
     <h1>Gallery</h1>
+      <div class="buffer"></div>
+      <div class="coming-soon">
       <h2>Under construction. Sorry!</h2>
+      </div>
+      <div class="buffer"></div>
+      
     </div>
 <!--     This is the end of the page     -->
     <div id="footer">

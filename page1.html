@@ -16,6 +16,7 @@ Body text = Space Grotesk
         width: 1440px;
         font-size: 16px;
         font-family: "Space Grotesk", sans-serif;
+        scroll-behavior: smooth;
       }
 
       body {
@@ -48,6 +49,25 @@ Body text = Space Grotesk
 
       img {
         width: 50%;
+        transition: 0.2s;
+      }
+      
+      img:hover {
+        animation: movement 2s ease-in-out infinite;
+      }
+      
+      @keyframes movement {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        
+        50% {
+          transform: translate(5px, 2px);
+        }
+        
+        100% {
+          transform: translate(0px, 0px);
+        }
       }
 
       .folder:hover {
@@ -64,7 +84,6 @@ Body text = Space Grotesk
       }
       
       .container {
-/*         background-color: red; */
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
@@ -72,12 +91,10 @@ Body text = Space Grotesk
       }
 
       .container div {
-/*         border: 1px solid black; */
         align-content: center;
       }
       
       .container img {
-/*         border: 1px solid black; */
         margin-left: -140px;
       }
 
@@ -135,6 +152,24 @@ Body text = Space Grotesk
       .container-nav img {
         padding-left: 24px;
       }
+      
+      .section-plot {
+        width: 1200px;
+        height: auto;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      .section-plot img {
+        transition: 0.3s;
+        padding-top: 50px;
+      }
+     
+     .section-plot p {
+       padding-top: 20px;
+       max-width: 480px;
+      margin: auto;
+     }
       
       #hero-frame {
         position: absolute;
@@ -213,9 +248,10 @@ Body text = Space Grotesk
       </div>
     </div>
     <!-- Content starts here-->
-    <div class="section">
+    <div class="section-plot">
       <h1>Plot</h1>
-      <p>Xyliana, a divine vessel, travels the world of Midiron in order to collect lost pieces of her soul. Each of the 4 kingdoms of Midiron are themed off of a category of nature.</p>
+      <p>Xyliana, a divine vessel, travels the world of Midiron in order to collect lost pieces of her soul. She does so by travelling across all 4 of Midiron’s major Kingdoms: Soraria, Talos, Verdera, and Zarez Mana. <br><br>Each one is themed off of a different category of nature: Soraria is the land of humanoid avians, Talos is the region of anthropomorphic land animals, Verdera is home to humanized flora, and Zarez Mana contains the insect folk.
+</p>
 <img src="plot-namesake.png" alt="A white haired girl speaks to another figure, also with white hair. She asks: 'So? How are you liking the material world so far?' The other character responds: 'Ground should not contain this much pain as a giver of experience and life.' A caption reads below: '*Translation: My feet hurt.'">
     </div>
     <div class="section">
@@ -303,7 +339,6 @@ Body text = Space Grotesk
       <h1>Gallery</h1>
 <!--       <div class="container"> -->
         <img src="namesake-gallery1.png" alt="A glowing knight is slashing a painted portrait of a Chinese-style emperor, the force of the strike covering the artwork with a bright white spark.">
-        <img src="the-emperor.png" alt="description of image">
 <!--       </div> -->
     </div>
     <!--     This is the end of the page     -->

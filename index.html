@@ -16,6 +16,7 @@ Body text = Space Grotesk
         width: 1440px;
         font-size: 16px;
         font-family: "Space Grotesk", sans-serif;
+        scroll-behavior: smooth;
       }
 
       body {
@@ -45,6 +46,29 @@ Body text = Space Grotesk
       a:hover {
         letter-spacing: 0.03em;
       }
+      
+      img {
+        transition: 0.2s;
+      }
+      
+      img:hover {
+        animation: movement 2s ease-in-out infinite;
+      }
+      
+      @keyframes movement {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        
+        50% {
+          transform: translate(5px, 2px);
+        }
+        
+        100% {
+          transform: translate(0px, 0px);
+        }
+      }
+
       
       .folder:hover {
         width: 61.2%;
