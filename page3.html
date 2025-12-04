@@ -11,7 +11,7 @@ Body text = Space Grotesk
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
-    <style>
+   <style>
       html {
         width: 1440px;
         font-size: 16px;
@@ -46,6 +46,10 @@ Body text = Space Grotesk
         letter-spacing: 0.03em;
       }
 
+      img {
+        width: 50%;
+      }
+
       .folder:hover {
         width: 61.2%;
       }
@@ -58,20 +62,23 @@ Body text = Space Grotesk
       .buffer {
         height: 100px;
       }
-
+      
       .container {
+/*         background-color: red; */
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         justify-content: center;
+        padding-left: 250px;
       }
 
       .container div {
-        padding: 8px 0 8px 0;
+/*         border: 1px solid black; */
         align-content: center;
       }
-
+      
       .container img {
-        padding-left: 24px;
+/*         border: 1px solid black; */
+        margin-left: -140px;
       }
 
       img.folder {
@@ -90,9 +97,8 @@ Body text = Space Grotesk
         background-position: center;
       }
 
-      .left h1 {
+      .left h2 {
         text-align: left;
-        margin-bottom: -50px;
       }
 
       .left p {
@@ -101,11 +107,12 @@ Body text = Space Grotesk
 
       .section {
         width: 1200px;
-        height: 640px;
+        height: auto;
+        text-align: center;
       }
 
       .section img {
-        padding-left: 120px;
+        transition: 0.3s;
         padding-top: 50px;
       }
 
@@ -114,42 +121,21 @@ Body text = Space Grotesk
         margin: auto;
       }
 
-      .section2 {
-        width: 1200px;
-        height: 740px;
-        background-image: url("frame2.png");
-        background-repeat: no-repeat;
-        background-size: 60%;
-        background-position-y: 190px;
-        background-position-x: 100px;
+      .container-nav {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
       }
 
-      .section2 .left {
-        width: auto;
-        height: 400px;
-        display: inline-block;
+      .container-nav div {
+        padding: 8px 0 8px 0;
+        align-content: center;
       }
-
-      .section2 img {
-        padding-left: 100px;
-        padding-top: 30px;
+      
+      .container-nav img {
+        padding-left: 24px;
       }
-
-      .section3 {
-        width: 1200px;
-        height: 540px;
-      }
-
-      .section3 .frame-text {
-        background-size: 65%;
-      }
-
-      #marissa {
-        float: right;
-        padding-right: 20px;
-        padding-top: 66px;
-      }
-
+      
       #hero-frame {
         position: absolute;
         width: 900px;
@@ -191,17 +177,13 @@ Body text = Space Grotesk
         text-decoration: none;
       }
 
-      #spidermonkey-sprites {
-        margin-top: -300px;
-        padding: 0 100px 0 100px;
-      }
     </style>
   </head>
   <body>
     <div id="top"></div>
     <div id="hero">
       <h1>Spider-Monkey</h1>
-      <div class="container">
+      <div class="container-nav">
         <div>
           <a href="index.html">
             <img class="folder" src="folder.png" alt="A pixel art of a computer folder.">
@@ -218,7 +200,7 @@ Body text = Space Grotesk
           </a>
         </div>
       </div>
-      <div class="container">  
+      <div class="container-nav">  
         <div>
         <a href="index.html" class="nav">&#x200b &#x200b Home &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b </a>
         </div>
