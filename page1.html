@@ -52,11 +52,7 @@ Body text = Space Grotesk
         width: 50%;
         transition: 0.2s;
       }
-
-      img:hover {
-        animation: movement 2s ease-in-out infinite;
-      }
-
+      
       @keyframes movement {
         0% {
           transform: translate(0px, 0px);
@@ -73,8 +69,17 @@ Body text = Space Grotesk
 
       .folder:hover {
         width: 61.2%;
+        animation: movement 2s ease-in-out infinite;
       }
-
+      
+      .character:hover {
+        animation: movement 2s ease-in-out infinite;
+      }
+      
+      .photo:hover {
+        width: 51%;
+      }
+      
       .nav {
         padding: 0 35px 0 25px;
         text-decoration: none;
@@ -252,7 +257,7 @@ Body text = Space Grotesk
       <h1>Plot</h1>
       <p>Xyliana, a divine vessel, travels the world of Midiron in order to collect lost pieces of her soul. She does so by travelling across all 4 of Midiron’s major Kingdoms: Soraria, Talos, Verdera, and Zarez Mana. <br><br>Each one is themed off of a different category of nature: Soraria is the land of humanoid avians, Talos is the region of anthropomorphic land animals, Verdera is home to humanized flora, and Zarez Mana contains the insect folk.
       </p>
-      <img src="plot-namesake.png" alt="A white haired girl speaks to another figure, also with white hair. She asks: 'So? How are you liking the material world so far?' The other character responds: 'Ground should not contain this much pain as a giver of experience and life.' A caption reads below: '*Translation: My feet hurt.'">
+      <img class="photo" src="plot-namesake.png" alt="A white haired girl speaks to another figure, also with white hair. She asks: 'So? How are you liking the material world so far?' The other character responds: 'Ground should not contain this much pain as a giver of experience and life.' A caption reads below: '*Translation: My feet hurt.'">
     </div>
     <div class="section">
       <h1>Characters</h1>
@@ -262,7 +267,7 @@ Body text = Space Grotesk
           <p>Xyliana is a divine vessel, and one of the five beings that survived Midiron’s extinction event. She’s the most powerful humanoid creature on Midiron and messing with her is almost guaranteed death. <br> She’s quite forgetful.</p>
         </div>
         <div>
-          <img src="xyliana.png" alt="A short white haired androgynous girl named Xyliana is jumping in the air, as if she has just vaulted over an obstacle.">
+          <img class="character" src="xyliana.png" alt="A short white haired androgynous girl named Xyliana is jumping in the air, as if she has just vaulted over an obstacle.">
         </div>
       </div>
       <div class="container">
@@ -273,7 +278,7 @@ Body text = Space Grotesk
           </p>
         </div>
         <div>
-          <img src="kenji.png" alt="Kenji is running while looking over his shoulder. He is a young boy dressed in a white cloak and has a dark shoulder length bob cut.">
+          <img class="character" src="kenji.png" alt="Kenji is running while looking over his shoulder. He is a young boy dressed in a white cloak and has a dark shoulder length bob cut.">
         </div>
       </div>
 
@@ -283,7 +288,7 @@ Body text = Space Grotesk
           <p>Xiareth is a historical figure Xyliana blessed personally. He’s remembered as the Great Emperor of Soraria to some, the Dread Dictator of Midiron to most. He basically invented colonization.</p>
         </div>
         <div>
-          <img src="xiareth.png" alt="Xiareth is sitting on an imaginary throne, looking at the viewer with a smug expression. He has the appearance of a young adult man, with blue skin, and an emerald green outfit reminiscent of Ancient Chinese emperors.">
+          <img class="character" src="xiareth.png" alt="Xiareth is sitting on an imaginary throne, looking at the viewer with a smug expression. He has the appearance of a young adult man, with blue skin, and an emerald green outfit reminiscent of Ancient Chinese emperors.">
         </div>
       </div>
       <div class="container">
@@ -294,7 +299,7 @@ Body text = Space Grotesk
           </p>
         </div>
         <div>
-          <img src="kyros.png" alt="Kryos stares at the viewer with a grim expression, resting his hands on a sword. He is dressed in black armour and has white hair.">
+          <img class="character" src="kyros.png" alt="Kryos stares at the viewer with a grim expression, resting his hands on a sword. He is dressed in black armour and has white hair.">
         </div>
       </div>
       <div class="container">
@@ -304,7 +309,7 @@ Body text = Space Grotesk
           </p>
         </div>
         <div>
-          <img src="suma.png" alt="Suma is preparing to shoot a bow, crouching into a combat ready firing position. She is wearing a colourful patterened dress and her dark locs are tied up.">
+          <img class="character" src="suma.png" alt="Suma is preparing to shoot a bow, crouching into a combat ready firing position. She is wearing a colourful patterened dress and her dark locs are tied up.">
         </div>
       </div>
       <!-- New Character-->
@@ -315,7 +320,7 @@ Body text = Space Grotesk
           </p>
         </div>
         <div>
-          <img src="kirran.png" alt="Kirran gazes at the bright star in his hands with a curious smile on his face. He has blonde hair and is wearing regal clothing along with a sharp crown.">
+          <img class="character" src="kirran.png" alt="Kirran gazes at the bright star in his hands with a curious smile on his face. He has blonde hair and is wearing regal clothing along with a sharp crown.">
         </div>
       </div>
       <!-- end of character bio             -->
@@ -327,7 +332,7 @@ Body text = Space Grotesk
           </p>
         </div>
         <div>
-          <img src="nexus.png" alt="Stars in the night sky form the shape of an eye, with a black hole forming the pupil.">
+          <img class="character" src="nexus.png" alt="Stars in the night sky form the shape of an eye, with a black hole forming the pupil.">
         </div>
 
       </div>
@@ -338,7 +343,7 @@ Body text = Space Grotesk
     <div class="section">
       <h1>Gallery</h1>
       <!--       <div class="container"> -->
-      <img src="namesake-gallery1.png" alt="A glowing knight is slashing a painted portrait of a Chinese-style emperor, the force of the strike covering the artwork with a bright white spark.">
+      <img class="photo" src="namesake-gallery1.png" alt="A glowing knight is slashing a painted portrait of a Chinese-style emperor, the force of the strike covering the artwork with a bright white spark.">
       <!--       </div> -->
     </div>
     <!--     This is the end of the page     -->

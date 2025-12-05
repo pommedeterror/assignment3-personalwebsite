@@ -52,11 +52,7 @@ Body text = Space Grotesk
         width: 50%;
         transition: 0.2s;
       }
-
-      img:hover {
-        animation: movement 2s ease-in-out infinite;
-      }
-
+      
       @keyframes movement {
         0% {
           transform: translate(0px, 0px);
@@ -73,8 +69,17 @@ Body text = Space Grotesk
 
       .folder:hover {
         width: 61.2%;
+        animation: movement 2s ease-in-out infinite;
       }
-
+      
+      .character:hover {
+        animation: movement 2s ease-in-out infinite;
+      }
+      
+      .photo:hover {
+        width: 51%;
+      }
+      
       .nav {
         padding: 0 35px 0 25px;
         text-decoration: none;
@@ -251,7 +256,7 @@ Body text = Space Grotesk
     <div class="section-plot">
       <h1>Plot</h1>
       <p>Heraverse is an urban fantasy political drama that takes place in Japan. The story details the conflict between the following families: the Hoshino Clan, the Kamadou Clan, and the Gojo Clan. This used to be a Jujutsu Kaisen AU. The difference is that this one is better. </p>
-      <img src="plot-heraverse.png" alt="A figure wearing all black clothing and a tulle skirt stands in front of a city skyline, obscured by a rippling magical barrier.">
+      <img class="photo" src="plot-heraverse.png" alt="A figure wearing all black clothing and a tulle skirt stands in front of a city skyline, obscured by a rippling magical barrier.">
     </div>
     <div class="section">
       <!--   All characters are listed here    -->
@@ -263,7 +268,7 @@ Body text = Space Grotesk
           <p>Hera is a CEO, and the titular character of Heraverse. Her company specializes in shipping and cursed weapons manufacturing. She’s the first protagonist of Heraverse, as well as its second villain. She murdered her uncle for the company and is currently killing the rest of the Kamadou clan to maintain power.</p>
         </div>
         <div>
-          <img src="hera.png" alt="Hera poses with both hands on one side of her hips, looking at the viewer with a stern gaze. She is wearing red high heels, and an elaborate neckpiece reminiscent of a peacock's feathers.">
+          <img class="character" src="hera.png" alt="Hera poses with both hands on one side of her hips, looking at the viewer with a stern gaze. She is wearing red high heels, and an elaborate neckpiece reminiscent of a peacock's feathers.">
         </div>
       </div>
       <div class="container">
@@ -272,17 +277,17 @@ Body text = Space Grotesk
           <p>Cousin is the second protagonist. Also goes by "Itoko", and, later, Aeneas Bellerose. He and Hera are cousins, and Hera didn’t care about them enough to put an actual name on their adoption forms. They used to be the heir to the Hoshino clan before Hera killed his father. They’re illiterate, super into visual kei, and hungry for revenge.</p>
         </div>
         <div>
-          <img src="cousin.png" alt="Cousin stands with their hands clasped behind their back. They are wearing all black clothing and a black tulle skirt with a purple gradient.">
+          <img class="character" src="cousin.png" alt="Cousin stands with their hands clasped behind their back. They are wearing all black clothing and a black tulle skirt with a purple gradient.">
         </div>
       </div>
     </div>
     <div class="section">
       <h1>Gallery</h1>
       <div>
-        <img src="heraverse-gallery-1.png" alt="Two lighthouses stand in a green field, against a completely black void.">
-        <img src="heraverse-gallery-2.webp" alt="Cousin struggles against invisible wind in a dark, strange tunnel with glowing lines across the walls.">
-        <img src="heraverse-gallery-3.png" alt="Cousin gazes at a trapped spirit behind an invisible barrier. The subtitle text reads: Who are you?">
-        <img src="heraverse-gallery-4.png" alt="Hera stands in a room with several paper talismans hanging on the walls. Smoke rises from her cigarette and the red lighting of the room illuminates her cold stare.">
+        <img class="photo" src="heraverse-gallery-1.png" alt="Two lighthouses stand in a green field, against a completely black void.">
+        <img class="photo" src="heraverse-gallery-2.webp" alt="Cousin struggles against invisible wind in a dark, strange tunnel with glowing lines across the walls.">
+        <img class="photo" src="heraverse-gallery-3.png" alt="Cousin gazes at a trapped spirit behind an invisible barrier. The subtitle text reads: Who are you?">
+        <img class="photo" src="heraverse-gallery-4.png" alt="Hera stands in a room with several paper talismans hanging on the walls. Smoke rises from her cigarette and the red lighting of the room illuminates her cold stare.">
       </div>
     </div>
     <!--     This is the end of the page     -->

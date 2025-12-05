@@ -48,6 +48,10 @@ Body text = Space Grotesk
         letter-spacing: 0.03em;
       }
 
+      img {
+        transition: 0.2s;
+      }
+      
       @keyframes movement {
         0% {
           transform: translate(0px, 0px);
@@ -62,10 +66,9 @@ Body text = Space Grotesk
         }
       }
 
-
       .folder:hover {
-        animation: movement 2s ease-in-out infinite;
         width: 61.2%;
+        animation: movement 2s ease-in-out infinite;
       }
 
       .nav {
