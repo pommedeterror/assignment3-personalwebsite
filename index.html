@@ -46,43 +46,36 @@ Body text = Space Grotesk
       a:hover {
         letter-spacing: 0.03em;
       }
-      
-      img {
-        transition: 0.2s;
-      }
-      
-      img:hover {
-        animation: movement 2s ease-in-out infinite;
-      }
-      
+
       @keyframes movement {
         0% {
           transform: translate(0px, 0px);
         }
-        
+
         50% {
           transform: translate(5px, 2px);
         }
-        
+
         100% {
           transform: translate(0px, 0px);
         }
       }
 
-      
+
       .folder:hover {
+        animation: movement 2s ease-in-out infinite;
         width: 61.2%;
       }
-      
+
       .nav {
         padding: 0 35px 0 25px;
         text-decoration: none;
       }
-      
+
       .buffer {
         height: 100px;
       }
-    
+
       .container {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -93,12 +86,12 @@ Body text = Space Grotesk
         padding: 8px 0 8px 0;
         align-content: center;
       }
-       
+
       .container img {
         padding-left: 24px;
       }
-      
-            .container-nav {
+
+      .container-nav {
         display: grid;
         grid-template-columns: auto auto auto;
         justify-content: center;
@@ -108,19 +101,19 @@ Body text = Space Grotesk
         padding: 8px 0 8px 0;
         align-content: center;
       }
-      
+
       .container-nav img {
         padding-left: 24px;
       }
-      
-      
+
+
       img.folder {
         align-self: center;
         width: 60%;
         height: auto;
         transition: 0.15s;
-      }     
-      
+      }
+
       .frame-text {
         padding-bottom: 100px;
         width: auto;
@@ -128,30 +121,36 @@ Body text = Space Grotesk
         background-repeat: no-repeat;
         background-size: 48%;
         background-position: center;
+        transition: 0.2s;
       }
       
-       .left h1 {
+      .frame-text:hover {
+        background-size: 49%;
+      }
+
+      .left h1 {
         text-align: left;
-        margin-bottom: -50px; 
+        margin-bottom: -50px;
       }
-      
+
       .left p {
         text-align: left;
-      }     
-      
+      }
+
       .section {
         width: 1200px;
         height: 640px;
       }
-    
+
       .section img {
         width: 100%;
       }
-      
-      .section p, .section3 p {
+
+      .section p,
+      .section3 p {
         margin: auto;
       }
-            
+
       .section2 {
         width: 1200px;
         height: 740px;
@@ -160,46 +159,55 @@ Body text = Space Grotesk
         background-size: 60%;
         background-position-y: 190px;
         background-position-x: 100px;
+        transition: 0.2s;
+      }
+      
+      .section2:hover {
+        background-size: 61%;
       }
 
-      .section2 .left{
+      .section2 .left {
         width: auto;
         height: 400px;
         display: inline-block;
       }
-      
+
       .section2 img {
         padding-left: 100px;
         padding-top: 30px;
-      }      
-      
+      }
+
       .section3 {
         width: 1200px;
         height: 540px;
       }
-      
+
       .section3 .frame-text {
         background-size: 65%;
       }
       
+      .section3 .frame-text:hover {
+        background-size: 66%;
+      }
+
       #marissa {
         float: right;
         padding-right: 20px;
         padding-top: 66px;
       }
-      
+
       #hero-frame {
         position: absolute;
         width: 900px;
         left: 270px;
         top: 40px;
       }
-      
+
       #top {
         margin-top: -70px;
         padding-bottom: 70px;
       }
-      
+
       #hero {
         width: 1200px;
         height: 550px;
@@ -208,7 +216,7 @@ Body text = Space Grotesk
         background-repeat: no-repeat;
         background-position: center;
       }
-      
+
       #hero h1 {
         margin-bottom: 10px;
       }
@@ -222,14 +230,14 @@ Body text = Space Grotesk
         padding: 77px 0 69px 0;
         background-color: black;
       }
-      
+
       #top-nav {
         color: white;
         text-decoration: none;
       }
-      
+
       #spidermonkey-sprites {
-        margin-top: -300px; 
+        margin-top: -300px;
         padding: 0 100px 0 100px;
       }
     </style>
@@ -255,9 +263,9 @@ Body text = Space Grotesk
           </a>
         </div>
       </div>
-      <div class="container-nav">  
+      <div class="container-nav">
         <div>
-        <a href="page1.html" class="nav">&#x200b &#x200b &#x200b Namesake</a>
+          <a href="page1.html" class="nav">&#x200b &#x200b &#x200b Namesake</a>
         </div>
         <div id="heraverse">
           <a href="page2.html" class="nav">&#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b &#x200b Heraverse</a>
@@ -265,15 +273,16 @@ Body text = Space Grotesk
         <div id="spidermonkey">
           <a href="page3.html" class="nav"> &#x200b &#x200b &#x200b Spider-Monkey</a>
         </div>
-        </div>      
       </div>
+    </div>
     <div class="section">
       <div class="frame-text">
-      <h1>Namesake</h1>
-      <p>
-        An immortal child wanders the four kingdoms of Midiron, reclaiming pieces of her soul.
-      <br> <br> <a href="page1.html">See the full pitch</a></p>
-        </div>
+        <h1>Namesake</h1>
+        <p>
+          An immortal child wanders the four kingdoms of Midiron, reclaiming pieces of her soul.
+          <br> <br> <a href="page1.html">See the full pitch</a>
+        </p>
+      </div>
       <img src="namesakelineup.png" alt="description of image">
     </div>
     <div class="section2">
@@ -281,24 +290,25 @@ Body text = Space Grotesk
       <div class="container">
         <div class="left">
           <h1>Heraverse</h1>
-      <p>Heraverse is an urban fantasy political drama that takes place in Japan. Lots of corruption, death, and tragedy. <br> <br>
-<a href="page2.html">See the full pitch</a></p>
-          </div>
+          <p>Heraverse is an urban fantasy political drama that takes place in Japan. Lots of corruption, death, and tragedy. <br> <br>
+            <a href="page2.html">See the full pitch</a>
+          </p>
+        </div>
         <div class="container">
           <img src="heraversesprites.png" alt="description of image" width="350px">
-      </div>
         </div>
       </div>
-    <div class="section3">
-    <div class="frame-text">
-      <h1>Spider-Monkey</h1>
-      <p>Peter Ke is a Chinese-American teen, living in bustling Shanghattan. His life is changed forever when he's bitten by a radioactive spider... monkey? <br> <br> <a href="page3.html">See the full pitch</a></p>
     </div>
+    <div class="section3">
+      <div class="frame-text">
+        <h1>Spider-Monkey</h1>
+        <p>Peter Ke is a Chinese-American teen, living in bustling Shanghattan. His life is changed forever when he's bitten by a radioactive spider... monkey? <br> <br> <a href="page3.html">See the full pitch</a></p>
+      </div>
       <div id="spidermonkey-sprites">
-      <img src="peter.png" alt="description of image" width="25%">
-      <img id="marissa" src="marissa.png" alt="description of image" width="20%">
+        <img src="peter.png" alt="description of image" width="25%">
+        <img id="marissa" src="marissa.png" alt="description of image" width="20%">
       </div>
-      </div>
+    </div>
     <div id="footer">
       <p><a id="top-nav" href="#top">^ <br> Back to top</a></p>
     </div>
